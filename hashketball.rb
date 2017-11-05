@@ -156,4 +156,3 @@ def team_names
   end
   return teams
 end
-
