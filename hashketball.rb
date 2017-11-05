@@ -180,3 +180,18 @@ def player_stats(player_name)
     end
   end
 end
+
+def big_shoe_rebounds
+  names = []
+  shoe_sizes = []
+
+  game_hash.each do |team, chars|
+    game_hash[team][:players].each do |name,stats|
+      names.push(name)
+      shoe_sizes.push(stats[:shoe])
+    end
+  end
+  puts names
+  puts shoe_sizes
+  
+end
