@@ -151,7 +151,9 @@ end
 
 def team_names
   teams = []
-  game_hash.collect do |team, chars|
-    teams.push(chars)
+  game_hash.each do |team, chars|
+      teams.push(game_hash[team][:team_name])
   end
+  return teams
 end
+
